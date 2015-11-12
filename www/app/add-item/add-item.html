@@ -1,0 +1,19 @@
+<ion-navbar *navbar>
+  <ion-title>agrega Cosas</ion-title>
+    <ion-nav-items secondary>
+      <button (click)=saveItem()>Guardar</button>
+    </ion-nav-items>
+</ion-navbar>
+
+<ion-content>
+  <ion-list>
+    <ion-input floating-label>
+      <ion-label>Nombre COSA:</ion-label>
+        <input type="text" [(ng-model)]="title"></input>
+    </ion-input>
+    <ion-input floating-label>
+      <ion-label>Descripción Cosa</ion-label>
+        <textarea [(ng-model)]="description"></textarea>
+    </ion-input>
+</ion-list>
+</ion-content>

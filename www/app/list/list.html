@@ -1,0 +1,20 @@
+<ion-navbar *navbar>
+  <ion-title>
+	    Lista Cosas
+ </ion-title>
+	<ion-nav-items secondary>
+		<button (click)=addItem()>
+			<icon add></icon>
+				  add cosa
+		</button>
+	</ion-nav-items>
+</ion-navbar>
+
+<ion-content>
+	<ion-list>
+		<ion-item *ng-for="#item of items"
+		(click)="viewItem(item)">
+		{{item.title}}
+	   </ion-item>
+	</ion-list>
+</ion-content>
